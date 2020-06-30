@@ -1,13 +1,16 @@
+
+// Componente en si
+
 .card {
   width: 730px;
   height: 280px;
   display: flex;
   border-radius: 10px;
   background-color: white;
-}
-.card img {
-  width: 40%;
-  border-radius: 10px 0 0px 10px;
+  img {
+    width: 40%;
+    border-radius: 10px 0 0px 10px;
+  }
 }
 
 .container {
@@ -28,25 +31,26 @@
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-}
-.author-card img {
-  width: 40px;
-  height: auto;
-  border-radius: 100%;
-}
-.author-card i {
-  margin-left: auto;
-  background-color: #f1f1f1;
-  border-radius: 100%;
-  width: 30px;
-  height: 30px;
-  background-image: url(./images/icon-share.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.author-card i img {
-  width: 20px;
-  height: 20px;
+  img {
+    width: 40px;
+    height: auto;
+    border-radius: 100%;
+  }
+  i {
+    margin-left: auto;
+    background-color: rgb(241, 241, 241);
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    background-image: url(./images/icon-share.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  i img {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .author {
@@ -56,7 +60,7 @@
 #card-description {
   font-size: 13px;
   margin-bottom: 10px;
-  color: #6d7f97;
+  color: hsl(214, 17%, 51%);
 }
 
 .author-title {
@@ -66,7 +70,5 @@
 #author-date {
   font-size: 13px;
   font-weight: 400;
-  color: #9eafc2;
+  color: hsl(212, 23%, 69%);
 }
-
-/*# sourceMappingURL=main.css.map */
