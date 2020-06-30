@@ -1,4 +1,8 @@
 
+body {
+  background-color: rgb(114, 114, 114);
+}
+
 // Componente en si
 
 .card {
@@ -72,3 +76,32 @@
   font-weight: 400;
   color: hsl(212, 23%, 69%);
 }
+
+#share-btn {
+  position: relative;
+}
+
+.share-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: hsl(217, 19%, 35%);
+    width: 200px;
+    height: 40px;
+    display: flex;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: lighter;
+    color: hsl(212, 23%, 69%);
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0px 15px 15px 15px;
+    visibility: visible;
+    padding: 5px;
+    letter-spacing: 3px;
+    img {
+      border-radius: initial;
+    }
+}
+

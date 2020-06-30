@@ -49,10 +49,19 @@
             <h3 class="author-title">Michelle Appleton</h3>
             <p id="author-date">28 Jun 2020</p>
           </div>
-          <i id="share-btn"></i>
+          <i id="share-btn" onclick="togglerShare()">
+            <div id="share-container" class="share-container">
+              <p class="share-text">SHARE</p>
+              <img src="./images/icon-facebook.svg" alt="facebook">
+              <img src="./images/icon-twitter.svg" alt="twitter">
+              <img src="./images/icon-pinterest.svg" alt="pinterest">
+              
+            </div>
+          </i>
         </div>
       </div>
     </div>
+
 
 
     <!-- Atribuciones a FRONTENDMENTOR por brindar el desafio -->
@@ -62,5 +71,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Juan José Sarsotti</a>.
     </div>
+
+    <script src="share.js"></script>
   </body>
 </html>

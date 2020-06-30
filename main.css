@@ -1,3 +1,7 @@
+body {
+  background-color: #727272;
+}
+
 .card {
   width: 730px;
   height: 280px;
@@ -67,6 +71,34 @@
   font-size: 13px;
   font-weight: 400;
   color: #9eafc2;
+}
+
+#share-btn {
+  position: relative;
+}
+
+.share-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #48556a;
+  width: 200px;
+  height: 40px;
+  display: flex;
+  font-family: Manrope;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: lighter;
+  color: #9eafc2;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 0px 15px 15px 15px;
+  visibility: visible;
+  padding: 5px;
+  letter-spacing: 3px;
+}
+.share-container img {
+  border-radius: initial;
 }
 
 /*# sourceMappingURL=main.css.map */

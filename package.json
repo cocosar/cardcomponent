@@ -1,0 +1,19 @@
+{
+  "name": "article-preview-component-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Article preview component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cocosar/cardcomponent.git"
+  },
+  "author": "Juan José Sarsotti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cocosar/cardcomponent/issues"
+  },
+  "homepage": "https://github.com/cocosar/cardcomponent#readme"
+}
