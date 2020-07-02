@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-   
+
     <!-- Icono de ventana -->
     <link
       rel="icon"
@@ -43,34 +43,32 @@
           you make any room feel complete.
         </p>
         <!-- Autoria y share del componente -->
-        <div class="author-card">
-          <img src="./images/avatar-michelle.jpg" alt="authoricon" />
-          <div class="author">
-            <h3 class="author-title">Michelle Appleton</h3>
-            <p id="author-date">28 Jun 2020</p>
-          </div>
-          <i id="share-btn" onclick="togglerShare()">
+        <div class="author-container">
+          <div class="author-card">
             <div id="share-container" class="share-container">
               <p class="share-text">SHARE</p>
-              <img src="./images/icon-facebook.svg" alt="facebook">
-              <img src="./images/icon-twitter.svg" alt="twitter">
-              <img src="./images/icon-pinterest.svg" alt="pinterest">
-              
+              <a href="#"
+                ><img src="./images/icon-facebook.svg" alt="facebook"
+              /></a>
+              <a href="#"
+                ><img src="./images/icon-twitter.svg" alt="twitter"
+              /></a>
+              <a href="#"
+                ><img src="./images/icon-pinterest.svg" alt="pinterest"
+              /></a>
             </div>
-          </i>
+            <img src="./images/avatar-michelle.jpg" alt="authoricon" />
+            <div class="author">
+              <h3 class="author-title">Michelle Appleton</h3>
+              <p id="author-date">28 Jun 2020</p>
+            </div>
+            <i id="share-btn" onclick="togglerShare()"> </i>
+          </div>
         </div>
       </div>
     </div>
 
 
-
-    <!-- Atribuciones a FRONTENDMENTOR por brindar el desafio -->
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Juan José Sarsotti</a>.
-    </div>
 
     <script src="share.js"></script>
   </body>
