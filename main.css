@@ -18,35 +18,37 @@ body {
 .card * {
   font-family: Manrope;
 }
-
-.container {
+.card .container {
   position: relative;
   display: flex;
   flex-direction: column;
   padding: 30px;
   justify-content: space-evenly;
 }
-
-.card-header {
+.card .container .card-header {
   line-height: 25px;
   font-size: 14px;
 }
-
-.author-card {
+.card .container #card-description {
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #6d7f97;
+}
+.card .container .author-card {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
 }
-.author-card img {
+.card .container .author-card img {
   width: 40px;
   height: auto;
   border-radius: 50%;
 }
-.author-card img:hover {
+.card .container .author-card img:hover {
   cursor: pointer;
 }
-.author-card i {
+.card .container .author-card i {
   margin-left: auto;
   background-color: #f1f1f1;
   border-radius: 50%;
@@ -56,42 +58,33 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-.author-card i:hover {
+.card .container .author-card i:hover {
   cursor: pointer;
   background-color: #d8d8d8;
 }
-.author-card i img {
+.card .container .author-card i img {
   width: 20px;
   height: 20px;
 }
-
-.author {
+.card .container .author-card .author {
   margin-left: 10px;
 }
-.author p,
-.author h3 {
+.card .container .author-card .author p,
+.card .container .author-card .author h3 {
   margin-top: 0;
   margin-bottom: 0;
 }
-
-#card-description {
-  font-size: 13px;
-  margin-bottom: 10px;
-  color: #6d7f97;
-}
-
-.author-title {
+.card .container .author-card .author .author-title {
   font-size: 14px;
 }
-
-#author-date {
+.card .container .author-card .author #author-date {
   font-size: 13px;
   font-weight: 400;
   color: #9eafc2;
 }
 
 .share-container {
-  visibility: visible;
+  visibility: hidden;
   position: absolute;
   bottom: 15%;
   right: 10%;

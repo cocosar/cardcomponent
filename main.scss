@@ -19,82 +19,76 @@ body {
   * {
     font-family: Manrope;
   }
-}
-
-.container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
-  justify-content: space-evenly;
-}
-
-.card-header {
-  line-height: 25px;
-  font-size: 14px;
-}
-
-.author-card {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  img {
-    width: 40px;
-    height: auto;
-    border-radius: 50%;
-    &:hover {
-      cursor: pointer;
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: space-evenly;
+    .card-header {
+      line-height: 25px;
+      font-size: 14px;
+    }
+    #card-description {
+      font-size: 13px;
+      margin-bottom: 10px;
+      color: hsl(214, 17%, 51%);
+    }
+    .author-card {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      img {
+        width: 40px;
+        height: auto;
+        border-radius: 50%;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      i {
+        margin-left: auto;
+        background-color: rgb(241, 241, 241);
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        background-image: url(./images/icon-share.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        &:hover {
+          cursor: pointer;
+          background-color: darken($color: rgb(241, 241, 241), $amount: 10%);
+        }
+      }
+    
+      i img {
+        width: 20px;
+        height: 20px;
+      }
+      .author {
+        margin-left: 10px;
+        p,
+        h3 {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+        .author-title {
+          font-size: 14px;
+        }
+        #author-date {
+          font-size: 13px;
+          font-weight: 400;
+          color: hsl(212, 23%, 69%);
+        }
+      }
     }
   }
-  i {
-    margin-left: auto;
-    background-color: rgb(241, 241, 241);
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    background-image: url(./images/icon-share.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    &:hover {
-      cursor: pointer;
-      background-color: darken($color: rgb(241, 241, 241), $amount: 10%);
-    }
-  }
-
-  i img {
-    width: 20px;
-    height: 20px;
-  }
 }
 
-.author {
-  margin-left: 10px;
-  p,
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-}
-
-#card-description {
-  font-size: 13px;
-  margin-bottom: 10px;
-  color: hsl(214, 17%, 51%);
-}
-
-.author-title {
-  font-size: 14px;
-}
-
-#author-date {
-  font-size: 13px;
-  font-weight: 400;
-  color: hsl(212, 23%, 69%);
-}
 
 .share-container {
-  visibility: visible; // dejar en hidden
+  visibility: hidden; // dejar en hidden
   position: absolute;
   bottom: 15%;
   right: 10%;
@@ -118,7 +112,7 @@ body {
   }
 }
 
-
+// Responsiveness
 @media only screen and(max-width: 400px) {
   .card {
     flex-direction: column;
